@@ -1,0 +1,26 @@
+{
+    "name": "education-for-all",
+    "version": "1.0.0",
+    "description": "A project for the MEGA Hackathon 2024 to improve the process of education using AI and computer science.",
+    "main": "index.html",
+    "scripts": {
+        "start": "live-server --open=index.html",
+        "build": "echo 'No build step specified'"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/your-username/education-for-all.git"
+    },
+    "keywords": [
+        "education",
+        "AI",
+        "hackathon",
+        "MEGA",
+        "web"
+    ],
+    "author": "Luna",
+    "license": "MIT",
+    "devDependencies": {
+        "live-server": "^1.2.0"
+    }
+}
