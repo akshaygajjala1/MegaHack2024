@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fefedb;
+    color: #303030;
+}
+
+.auth-page {
+    background-image: url('images/auth-background.png'); /* Use the new background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 80px; /* Ensure content doesn't overlap with fixed header */
+}
+
+.auth-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.auth-container h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    color: #1A1A2E; /* Dark Navy Blue text */
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.auth-container button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #00BFFF; /* Vibrant Blue */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    cursor: pointer;
+    border: none;
+}
+
+.auth-container button:hover {
+    background-color: #005f80; /* Darker shade of blue for hover */
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.auth-container p {
+    font-size: 0.9em;
+    color: #303030;
+    margin-top: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #303030;
+    color: #5fd8c4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Ensure the header is fixed at the top */
+    width: 100%; /* Ensure it spans the full width */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    width: 50px;
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #5fd8c4;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fefedb;
+    transform: scale(1.1);
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: #5fd8c4;
+    padding: 150px 20px;
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(48, 48, 48, 0.7); /* Dark overlay */
+    z-index: -1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    margin: auto;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hero-content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: slideIn 2s ease-in-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #00BFFF; /* Vibrant Blue */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #005f80; /* Darker shade of blue for hover */
+    color: #fff;
+    transform: scale(1.1);
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 80px; /* Add margin to avoid overlap with fixed header */
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #303030;
+}
+
+#about p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #303030;
+}
+
+.feature {
+    margin: 20px 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #5fd8c4;
+    color: #303030;
+    display: inline-block;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #303030;
+    color: #5fd8c4;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
